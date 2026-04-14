@@ -126,6 +126,16 @@ The model identified four main customer segments:
 
 
 
+## 🧠 Design Choices
+
+- Synthetic data was used to simulate realistic retail behavior while avoiding privacy constraints
+- Data was stored in Parquet format for efficient querying
+- Transaction data was partitioned by year and month to optimize Athena performance
+- Glue Data Catalog was used to expose datasets as queryable tables
+- Feature engineering was performed at both basket and customer level to capture behavioral patterns
+
+
+
 ## Tech stack 
 - Python
 - Pandas / NumPy
