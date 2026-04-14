@@ -73,6 +73,18 @@ The full dataset can be reproduced by running the data generation notebook.
 9. Applied KMeans clustering for segmentation
 
 
+## 📊 Pipeline in Action
+
+### S3 Data Lake Structure
+![S3](images/s3/raw_layer.png)
+
+### Glue Data Catalog
+![Glue](images/glue/tables_overview.png)
+
+### Athena Query Example
+![Athena](images/athena/query_example.png)
+
+
 
 ## What this project demonstrates 
 - Data ingestion
