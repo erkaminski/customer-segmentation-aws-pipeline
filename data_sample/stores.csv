@@ -1,0 +1,21 @@
+store_id,store_name,city,province,region
+1,Kaminski Brussels,Brussels,Brussels-Capital,Brussels
+2,Kaminski Antwerp,Antwerp,Antwerp,Flanders
+3,Kaminski Ghent,Ghent,East Flanders,Flanders
+4,Kaminski Bruges,Bruges,West Flanders,Flanders
+5,Kaminski Leuven,Leuven,Flemish Brabant,Flanders
+6,Kaminski Hasselt,Hasselt,Limburg,Flanders
+7,Kaminski Mechelen,Mechelen,Antwerp,Flanders
+8,Kaminski Aalst,Aalst,East Flanders,Flanders
+9,Kaminski Kortrijk,Kortrijk,West Flanders,Flanders
+10,Kaminski Genk,Genk,Limburg,Flanders
+11,Kaminski Liege,Liege,Liege,Wallonia
+12,Kaminski Namur,Namur,Namur,Wallonia
+13,Kaminski Charleroi,Charleroi,Hainaut,Wallonia
+14,Kaminski Mons,Mons,Hainaut,Wallonia
+15,Kaminski Tournai,Tournai,Hainaut,Wallonia
+16,Kaminski Arlon,Arlon,Luxembourg,Wallonia
+17,Kaminski La Louviere,La Louviere,Hainaut,Wallonia
+18,Kaminski Verviers,Verviers,Liege,Wallonia
+19,Kaminski Wavre,Wavre,Walloon Brabant,Wallonia
+20,Kaminski Nivelles,Nivelles,Walloon Brabant,Wallonia
