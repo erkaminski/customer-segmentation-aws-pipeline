@@ -7,12 +7,12 @@ End-to-end retail data pipeline built on AWS (S3, Glue, Athena), using a fully s
 
 Built an end-to-end AWS data pipeline to segment customers using KMeans.
 
-- 📦 Data lake on S3 (raw / processed / curated)
-- ⚙️ ETL with AWS Glue (Spark)
-- 🔎 SQL analytics with Athena
-- 🧠 Customer segmentation (KMeans)
+- Data lake on S3 (raw / processed / curated)
+- ETL with AWS Glue (Spark)
+- SQL analytics with Athena
+- Customer segmentation (KMeans)
 
-👉 Result: identified 4 actionable customer segments for marketing strategies.
+> Result: identified 4 actionable customer segments for marketing strategies.
 
 
 
