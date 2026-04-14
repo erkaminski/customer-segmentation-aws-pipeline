@@ -2,6 +2,20 @@
 End-to-end retail data pipeline built on AWS (S3, Glue, Athena), using a fully synthetic dataset to simulate real-world customer behavior and perform segmentation with KMeans.
 
 
+
+## 🚀 TL;DR
+
+Built an end-to-end AWS data pipeline to segment customers using KMeans.
+
+- 📦 Data lake on S3 (raw / processed / curated)
+- ⚙️ ETL with AWS Glue (Spark)
+- 🔎 SQL analytics with Athena
+- 🧠 Customer segmentation (KMeans)
+
+👉 Result: identified 4 actionable customer segments for marketing strategies.
+
+
+
 ## Overview
 Real-world retail datasets are rarely accessible due to privacy and commercial constraints. 
 To overcome this, a synthetic dataset was generated to replicate realistic customer behavior, product distributions, and transaction patterns, while remaining suitable for scalable processing in a cloud environment.
