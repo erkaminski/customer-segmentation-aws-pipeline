@@ -12,7 +12,7 @@ Built an end-to-end AWS data pipeline to segment customers using KMeans.
 - SQL analytics with Athena
 - Customer segmentation (KMeans)
 
-> Result: identified 4 actionable customer segments for marketing strategies.
+Result: **identified 4 actionable customer segments for marketing strategies.**
 
 
 
