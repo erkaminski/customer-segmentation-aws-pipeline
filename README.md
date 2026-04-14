@@ -32,7 +32,7 @@ The goal is to transform raw transactional data into business insights.
 
 ## Architecture
 
-
+![Architecture](images/project_architecture.png)
 
 The pipeline follows a layered data lake architecture:
 
