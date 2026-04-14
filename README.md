@@ -32,19 +32,7 @@ The goal is to transform raw transactional data into business insights.
 
 ## Architecture
 
-```
-Data Generation (Python)
-        ↓
-S3 (Raw Layer)
-        ↓
-Glue ETL (Processing & Partitioning)
-        ↓
-S3 (Processed / Curated Layers)
-        ↓
-Athena (SQL Analytics)
-        ↓
-Customer Segmentation (KMeans)
-```
+![Architecture](images/architecture.png)
 
 The pipeline follows a layered data lake architecture:
 
@@ -87,6 +75,17 @@ The full dataset can be reproduced by running the data generation notebook.
 9. Applied KMeans clustering for segmentation
 
 
+
+## ⚙️ How to run
+
+1. Run `retail_data_generation.ipynb` to generate synthetic data  
+2. Upload data to S3 (raw layer)  
+3. Run AWS Glue ETL job to process and partition data  
+4. Query processed data using Athena  
+5. Run `customer_segmentation.ipynb` to build features and apply KMeans  
+
+
+
 ## 📊 AWS Pipeline in Action
 
 ### S3 Data Lake Structure
@@ -123,20 +122,25 @@ Customers were segmented based on:
 
 
 
-## Results 
-The model identified four main customer segments:
+## 📊 Results & Business Insights
 
-- High-value customers
-- Regular customers
-- Bulk buyers
-- Low engagement customers
+The model identified four key customer segments:
 
+- 🟢 High-value customers  
+  → High spend, frequent purchases  
+  → Action: retention & loyalty programs  
 
+- 🟡 Frequent customers  
+  → Regular purchases, moderate spend  
+  → Action: upsell strategies  
 
-## Business insights
-- High-value customers should be retained through loyalty programs
-- Bulk buyers can be targeted to increase purchase frequency
-- Low engagement customers can be reactivated
+- 🔵 Bulk buyers  
+  → Large baskets but low frequency  
+  → Action: increase purchase frequency  
+
+- 🔴 Low engagement customers  
+  → Low spend, few transactions  
+  → Action: reactivation campaigns  
 
 
 
@@ -147,6 +151,7 @@ The model identified four main customer segments:
 - Transaction data was partitioned by year and month to optimize Athena performance
 - Glue Data Catalog was used to expose datasets as queryable tables
 - Feature engineering was performed at both basket and customer level to capture behavioral patterns
+- KMeans was chosen for its simplicity and effectiveness in identifying behavioral patterns in customer data
 
 
 
