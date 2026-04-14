@@ -86,7 +86,7 @@ The full dataset can be reproduced by running the data generation notebook.
 
 
 
-## 📊 AWS Pipeline in Action
+## AWS Pipeline in Action
 
 ### S3 Data Lake Structure
 ![S3](images/s3/raw_layer.png)
