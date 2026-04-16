@@ -1,7 +1,5 @@
 # Customer Segmentation Pipeline on AWS
-End-to-end retail data pipeline built on AWS (S3, Glue, Athena), using a fully synthetic dataset to simulate real-world customer behavior and perform segmentation with KMeans.
-
-
+Retail data pipeline built on AWS (S3, Glue, Athena), using a synthetic dataset to mimic customer behavior and performing segmentation with KMeans.
 
 ## 🚀 TL;DR
 
@@ -17,8 +15,10 @@ Result: **identified 4 actionable customer segments for marketing strategies.**
 
 
 ## Overview
-Real-world retail datasets are rarely accessible due to privacy and commercial constraints. 
-To overcome this, a synthetic dataset was generated to replicate realistic customer behavior, product distributions, and transaction patterns, while remaining suitable for scalable processing in a cloud environment.
+
+Retail datasets are often hard to access because of privacy and business constraints.
+
+To work around this, I generated a synthetic dataset that mimics customer behavior, product distributions, and transactions. This makes it possible to build and test a full pipeline in a cloud environment.
 
 It covers:
 - synthetic data generation (clients, stores, products, transactions)
@@ -26,7 +26,7 @@ It covers:
 - feature engineering
 - customer segmentation
 
-The goal is to transform raw transactional data into business insights.
+The goal is to turn raw transaction data into something usable for analysis.
 
 
 
@@ -99,7 +99,7 @@ The full dataset can be reproduced by running the data generation notebook.
 
 
 
-## What this project demonstrates 
+## What's included in this project
 - Data ingestion
 - Data lake architecture (raw / processed / curated)
 - Batch processing
@@ -146,7 +146,7 @@ The model identified four key customer segments:
 
 ## Design Choices
 
-- Synthetic data was used to simulate realistic retail behavior while avoiding privacy constraints
+- Synthetic data was used to mimic realistic retail behavior while avoiding privacy issues
 - Data was stored in Parquet format for efficient querying
 - Transaction data was partitioned by year and month to optimize Athena performance
 - Glue Data Catalog was used to expose datasets as queryable tables
