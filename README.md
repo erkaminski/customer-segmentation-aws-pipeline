@@ -123,7 +123,7 @@ Customers were segmented based on:
 
 
 
-## 📊 Results & Business Insights
+## Results & Business Insights
 
 The model identified four key customer segments:
 
