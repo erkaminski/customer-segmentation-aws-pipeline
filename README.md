@@ -1,6 +1,8 @@
 # Customer Segmentation Pipeline on AWS
 Retail data pipeline built on AWS (S3, Glue, Athena), using a synthetic dataset to mimic customer behavior and performing segmentation with KMeans.
 
+---
+
 ## 🚀 TL;DR
 
 Built an end-to-end AWS data pipeline to segment customers using KMeans.
@@ -12,7 +14,7 @@ Built an end-to-end AWS data pipeline to segment customers using KMeans.
 
 Result: **identified 4 actionable customer segments for marketing strategies.**
 
-
+---
 
 ## Overview
 
@@ -28,7 +30,7 @@ It covers:
 
 The goal is to turn raw transaction data into something usable for analysis.
 
-
+---
 
 ## Architecture
 
@@ -41,7 +43,7 @@ The pipeline follows a layered data lake architecture:
 - Curated layer: enriched dataset combining all business entities
 - Analytics layer: customer segmentation using Python
 
-
+---
 
 ## Data model
 The dataset includes:
@@ -53,7 +55,7 @@ The dataset includes:
 
 The curated dataset joins these tables to provide a complete view of each transaction.
 
-
+---
 
 ## Sample Data
 
@@ -61,7 +63,7 @@ A subset of the dataset is available in the `data_sample/` folder for quick expl
 
 The full dataset can be reproduced by running the data generation notebook.
 
-
+---
 
 ## Pipeline steps 
 1. Generated synthetic retail dataset in Python
@@ -74,7 +76,7 @@ The full dataset can be reproduced by running the data generation notebook.
 8. Built customer-level features
 9. Applied KMeans clustering for segmentation
 
-
+---
 
 ## ⚙️ How to run
 1. Install dependencies  
@@ -85,7 +87,7 @@ The full dataset can be reproduced by running the data generation notebook.
 5. Query processed data using Athena  
 6. Run `customer_segmentation.ipynb` to build features and apply KMeans   
 
-
+---
 
 ## AWS Pipeline in Action
 
@@ -98,7 +100,7 @@ The full dataset can be reproduced by running the data generation notebook.
 ## Athena Query Example
 ![Athena](images/athena/query_example.png)
 
-
+---
 
 ## What's included in this project
 - Data ingestion
@@ -110,7 +112,7 @@ The full dataset can be reproduced by running the data generation notebook.
 - Feature engineering
 - Unsupervised machine learning
 
-
+---
 
 ## Customer segmentation 
 Customers were segmented based on:
@@ -121,7 +123,7 @@ Customers were segmented based on:
 - basket size
 - product diversity
 
-
+---
 
 ## Results & Business Insights
 
@@ -143,7 +145,7 @@ The model identified four key customer segments:
   → Low spend, few transactions  
   → Action: reactivation campaigns  
 
-
+---
 
 ## Design Choices
 
@@ -154,7 +156,7 @@ The model identified four key customer segments:
 - Feature engineering was performed at both basket and customer level to capture behavioral patterns
 - KMeans was chosen for its simplicity and effectiveness in identifying behavioral patterns in customer data
 
-
+---
 
 ## Tech stack 
 - Python
@@ -165,7 +167,7 @@ The model identified four key customer segments:
 - AWS Athena
 - Parquet
 
-
+---
 
 ## Future improvements
 - pipeline automation (Glue workflows)
