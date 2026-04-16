@@ -77,24 +77,25 @@ The full dataset can be reproduced by running the data generation notebook.
 
 
 ## ⚙️ How to run
-
-1. Run `retail_data_generation.ipynb` to generate synthetic data  
-2. Upload data to S3 (raw layer)  
-3. Run AWS Glue ETL job to process and partition data  
-4. Query processed data using Athena  
-5. Run `customer_segmentation.ipynb` to build features and apply KMeans  
+1. Install dependencies  
+   `pip install -r requirements.txt`
+2. Run `retail_data_generation.ipynb` to generate synthetic data  
+3. Upload data to S3 (raw layer)  
+4. Run AWS Glue ETL job to process and partition data  
+5. Query processed data using Athena  
+6. Run `customer_segmentation.ipynb` to build features and apply KMeans   
 
 
 
 ## AWS Pipeline in Action
 
-### S3 Data Lake Structure
+## S3 Data Lake Structure
 ![S3](images/s3/raw_layer.png)
 
-### Glue Data Catalog
+## Glue Data Catalog
 ![Glue](images/glue/tables_overview.png)
 
-### Athena Query Example
+## Athena Query Example
 ![Athena](images/athena/query_example.png)
 
 
