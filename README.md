@@ -16,7 +16,7 @@ Result: **identified 4 actionable customer segments for marketing strategies.**
 
 ---
 
-## Overview
+## 📂 Overview
 
 Retail datasets are often hard to access because of privacy and business constraints.
 
@@ -32,7 +32,7 @@ The goal is to turn raw transaction data into something usable for analysis.
 
 ---
 
-## Architecture
+## 📂 Architecture
 
 ![Architecture](images/project_architecture.png)
 
@@ -45,7 +45,7 @@ The pipeline follows a layered data lake architecture:
 
 ---
 
-## Data model
+## 📂 Data model
 The dataset includes:
 
 - Clients
@@ -57,7 +57,7 @@ The curated dataset joins these tables to provide a complete view of each transa
 
 ---
 
-## Sample Data
+## 📂 Sample Data
 
 A subset of the dataset is available in the `data_sample/` folder for quick exploration.
 
@@ -65,7 +65,7 @@ The full dataset can be reproduced by running the data generation notebook.
 
 ---
 
-## Pipeline steps 
+## 📂 Pipeline steps 
 1. Generated synthetic retail dataset in Python
 2. Stored raw data in S3
 3. Created metadata tables using AWS Glue Data Catalog
@@ -78,7 +78,7 @@ The full dataset can be reproduced by running the data generation notebook.
 
 ---
 
-## ⚙️ How to run
+## 📂 How to run
 1. Install dependencies  
    `pip install -r requirements.txt`
 2. Run `retail_data_generation.ipynb` to generate synthetic data  
@@ -89,20 +89,20 @@ The full dataset can be reproduced by running the data generation notebook.
 
 ---
 
-## AWS Pipeline in Action
+## 📂 AWS Pipeline in Action
 
-## S3 Data Lake Structure
+### 📌 S3 Data Lake Structure
 ![S3](images/s3/raw_layer.png)
 
-## Glue Data Catalog
+### 📌 Glue Data Catalog
 ![Glue](images/glue/tables_overview.png)
 
-## Athena Query Example
+### 📌 Athena Query Example
 ![Athena](images/athena/query_example.png)
 
 ---
 
-## What's included in this project
+## 📂 What's included in this project
 - Data ingestion
 - Data lake architecture (raw / processed / curated)
 - Batch processing
@@ -114,7 +114,7 @@ The full dataset can be reproduced by running the data generation notebook.
 
 ---
 
-## Customer segmentation 
+## 📂 Customer segmentation 
 Customers were segmented based on:
 
 - total spend
@@ -125,7 +125,7 @@ Customers were segmented based on:
 
 ---
 
-## Results & Business Insights
+## 📂 Results & Business Insights
 
 The model identified four key customer segments:
 
@@ -147,7 +147,7 @@ The model identified four key customer segments:
 
 ---
 
-## Design Choices
+## 📂 Design Choices
 
 - Synthetic data was used to mimic realistic retail behavior while avoiding privacy issues
 - Data was stored in Parquet format for efficient querying
@@ -158,7 +158,7 @@ The model identified four key customer segments:
 
 ---
 
-## Tech stack 
+## 📂 Tech stack 
 - Python
 - Pandas / NumPy
 - scikit-learn
@@ -169,7 +169,7 @@ The model identified four key customer segments:
 
 ---
 
-## Future improvements
+## 📂 Future improvements
 - pipeline automation (Glue workflows)
 - dashboard (Power BI / Tableau)
 - real-time ingestion
